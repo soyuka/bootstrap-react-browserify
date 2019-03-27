@@ -6,25 +6,25 @@
   "scripts": {
     "watch": "watchify src/index.js -o dist/index.js -t babelify",
     "build": "browserify src/index.js -o dist/index.js -t babelify",
-    "serve": "serve",
+    "start": "serve",
     "test": "echo test"
   },
   "keywords": [],
   "author": "",
   "license": "",
   "dependencies": {
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.6",
-    "@babel/polyfill": "^7.0.0",
-    "@babel/preset-env": "^7.1.6",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/polyfill": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
-    "serve": "^10.1.1",
-    "watchify": "^3.11.0"
+    "serve": "^10.1.2",
+    "watchify": "^3.11.1"
   }
 }
