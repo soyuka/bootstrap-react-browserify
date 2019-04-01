@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "watchify src/index.js -o dist/index.js -t babelify",
-    "build": "browserify src/index.js -o dist/index.js -t babelify",
+    "watch": "watchify src/index.js -o dist/index.js -t babelify -t browserify-css",
+    "build": "browserify src/index.js -o dist/index.js -t babelify -t browserify-css",
     "start": "serve",
     "test": "echo test"
   },
@@ -24,6 +24,7 @@
     "@babel/preset-react": "^7.0.0",
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
+    "browserify-css": "^0.14.0",
     "serve": "^10.1.2",
     "watchify": "^3.11.1"
   }
